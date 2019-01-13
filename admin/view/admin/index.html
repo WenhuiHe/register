@@ -1,0 +1,254 @@
+{extend name='common@admin'/}
+
+{block name='title'}医疗挂号管理系统首页{/block}
+
+{block name='breadcrumb'}
+<ul class="breadcrumb">
+    <li>
+        <i class="ace-icon fa fa-home home-icon"></i>
+        <a href="/admin">首页</a>
+    </li>
+
+    <li>
+        <a href="/admin">信息展示</a>
+    </li>
+</ul><!-- /.breadcrumb -->
+{/block}
+
+{block name='content'}
+
+
+<div class="page-header">
+    <h1>
+        系统信息总览
+    </h1>
+</div><!-- /.page-header -->
+
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 widget-container-col">
+                <!-- #section:custom/widget-box -->
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h3 class="widget-title">医院</h3>
+                        <!-- #section:custom/widget-box.toolbar -->
+                        <div class="widget-toolbar">
+                            <a href="#" data-action="fullscreen" class="orange2">
+                                <i class="ace-icon fa fa-expand"></i>
+                            </a>
+
+                            <a href="#" data-action="reload">
+                                <i class="ace-icon fa fa-refresh"></i>
+                            </a>
+
+                            <a href="#" data-action="collapse">
+                                <i class="ace-icon fa fa-chevron-up"></i>
+                            </a>
+
+                            <a href="#" data-action="close">
+                                <i class="ace-icon fa fa-times"></i>
+                            </a>
+                        </div>
+                        <!-- /section:custom/widget-box.toolbar -->
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main center">
+                            共有<h1 class="inline">{$count['hospital']}</h1>家
+                        </div>
+                    </div>
+                </div>
+                <!-- /section:custom/widget-box -->
+            </div>
+
+
+            <div class="col-xs-12 col-sm-4 widget-container-col">
+                <!-- #section:custom/widget-box -->
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h3 class="widget-title">累计科室</h3>
+                        <!-- #section:custom/widget-box.toolbar -->
+                        <div class="widget-toolbar">
+                            <a href="#" data-action="fullscreen" class="orange2">
+                                <i class="ace-icon fa fa-expand"></i>
+                            </a>
+
+                            <a href="#" data-action="reload">
+                                <i class="ace-icon fa fa-refresh"></i>
+                            </a>
+
+                            <a href="#" data-action="collapse">
+                                <i class="ace-icon fa fa-chevron-up"></i>
+                            </a>
+
+                            <a href="#" data-action="close">
+                                <i class="ace-icon fa fa-times"></i>
+                            </a>
+                        </div>
+                        <!-- /section:custom/widget-box.toolbar -->
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main center">
+                            共有<h1 class="inline">{$count['smdept']}</h1>室
+                        </div>
+                    </div>
+                </div>
+                <!-- /section:custom/widget-box -->
+            </div>
+
+            <div class="col-xs-12 col-sm-4 widget-container-col">
+                <!-- #section:custom/widget-box -->
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h3 class="widget-title">医生</h3>
+                        <!-- #section:custom/widget-box.toolbar -->
+                        <div class="widget-toolbar">
+                            <a href="#" data-action="fullscreen" class="orange2">
+                                <i class="ace-icon fa fa-expand"></i>
+                            </a>
+
+                            <a href="#" data-action="reload">
+                                <i class="ace-icon fa fa-refresh"></i>
+                            </a>
+
+                            <a href="#" data-action="collapse">
+                                <i class="ace-icon fa fa-chevron-up"></i>
+                            </a>
+
+                            <a href="#" data-action="close">
+                                <i class="ace-icon fa fa-times"></i>
+                            </a>
+                        </div>
+                        <!-- /section:custom/widget-box.toolbar -->
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main center">
+                            共有<h1 class="inline">{$count['doctor']}</h1>位
+                        </div>
+                    </div>
+                </div>
+                <!-- /section:custom/widget-box -->
+            </div>
+
+            <div class="col-xs-12 col-sm-4 widget-container-col">
+                <!-- #section:custom/widget-box -->
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h3 class="widget-title">用户</h3>
+                        <!-- #section:custom/widget-box.toolbar -->
+                        <div class="widget-toolbar">
+                            <a href="#" data-action="fullscreen" class="orange2">
+                                <i class="ace-icon fa fa-expand"></i>
+                            </a>
+
+                            <a href="#" data-action="reload">
+                                <i class="ace-icon fa fa-refresh"></i>
+                            </a>
+
+                            <a href="#" data-action="collapse">
+                                <i class="ace-icon fa fa-chevron-up"></i>
+                            </a>
+
+                            <a href="#" data-action="close">
+                                <i class="ace-icon fa fa-times"></i>
+                            </a>
+                        </div>
+                        <!-- /section:custom/widget-box.toolbar -->
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main center">
+                            共有<h1 class="inline">{$count['user']}</h1>位
+                        </div>
+                    </div>
+                </div>
+                <!-- /section:custom/widget-box -->
+            </div>
+
+            <div class="col-xs-12 col-sm-4 widget-container-col">
+                <!-- #section:custom/widget-box -->
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h3 class="widget-title">累计挂号</h3>
+                        <!-- #section:custom/widget-box.toolbar -->
+                        <div class="widget-toolbar">
+                            <a href="#" data-action="fullscreen" class="orange2">
+                                <i class="ace-icon fa fa-expand"></i>
+                            </a>
+
+                            <a href="#" data-action="reload">
+                                <i class="ace-icon fa fa-refresh"></i>
+                            </a>
+
+                            <a href="#" data-action="collapse">
+                                <i class="ace-icon fa fa-chevron-up"></i>
+                            </a>
+
+                            <a href="#" data-action="close">
+                                <i class="ace-icon fa fa-times"></i>
+                            </a>
+                        </div>
+                        <!-- /section:custom/widget-box.toolbar -->
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main center">
+                            共有<h1 class="inline">{$count['reg']}</h1>次
+                        </div>
+                    </div>
+                </div>
+                <!-- /section:custom/widget-box -->
+            </div>
+
+
+            <div class="col-xs-12 col-sm-4 widget-container-col">
+                <!-- #section:custom/widget-box -->
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h3 class="widget-title">系统管理员</h3>
+                        <!-- #section:custom/widget-box.toolbar -->
+                        <div class="widget-toolbar">
+                            <a href="#" data-action="fullscreen" class="orange2">
+                                <i class="ace-icon fa fa-expand"></i>
+                            </a>
+
+                            <a href="#" data-action="reload">
+                                <i class="ace-icon fa fa-refresh"></i>
+                            </a>
+
+                            <a href="#" data-action="collapse">
+                                <i class="ace-icon fa fa-chevron-up"></i>
+                            </a>
+
+                            <a href="#" data-action="close">
+                                <i class="ace-icon fa fa-times"></i>
+                            </a>
+                        </div>
+                        <!-- /section:custom/widget-box.toolbar -->
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main center">
+                            共有<h1 class="inline">{$count['admin']}</h1>位
+                        </div>
+                    </div>
+                </div>
+                <!-- /section:custom/widget-box -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+</script>
+
+
+{/block}
