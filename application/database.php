@@ -9,19 +9,22 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+use \think\Env;
+
+
 return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => '127.0.0.1',
+    'hostname'        => getenv('MYSQL_HOST'),
     // 数据库名
-    'database'        => '',
+    'database'        => getenv('MYSQL_DBNAME'),
     // 用户名
-    'username'        => 'root',
+    'username'        => getenv('MYSQL_USERNAME'),
     // 密码
-    'password'        => '',
+    'password'        => getenv('MYSQL_PASSWORD'),
     // 端口
-    'hostport'        => '',
+    'hostport'        => getenv('MYSQL_PORT'),
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
@@ -40,8 +43,6 @@ return [
     'master_num'      => 1,
     // 指定从服务器序号
     'slave_no'        => '',
-    // 自动读取主库数据
-    'read_master'     => false,
     // 是否严格检查字段是否存在
     'fields_strict'   => true,
     // 数据集返回类型

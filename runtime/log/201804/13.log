@@ -1,0 +1,776 @@
+---------------------------------------------------------------
+[ 2018-04-13T19:15:16+08:00 ] 127.0.0.1 GET /
+[ info ] register.org/ [运行时间：0.032604s][吞吐率：30.67req/s] [内存消耗：3,473.79kb] [文件加载：53]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/dpt/13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/index/index.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000486s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000439s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000471s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000406s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000306s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000276s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000303s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000268s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000336s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:15:17+08:00 ] 127.0.0.1 GET /dpt/1
+[ info ] register.org/dpt/1 [运行时间：0.035311s][吞吐率：28.32req/s] [内存消耗：3,524.02kb] [文件加载：53]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Dept',
+    2 => 'dpt',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Dept->dpt[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Dept.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/dept/dpt.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+  5 => 'dpt',
+  6 => 'hp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000529s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.004867s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000509s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000434s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000359s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000463s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000330s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000362s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000343s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000345s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000361s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `smdept` [ RunTime:0.002191s ]
+[ sql ] [ SQL ] SELECT * FROM `smdept` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT h.id as hospital_id,h.name as hospital,`h`.`pic`,`h`.`description`,s.id as dept_id,s.name as dept FROM `smdept` `s` INNER JOIN `hospital` `h` ON `s`.`hospital`=`h`.`id` WHERE  `s`.`name` = '心血管内科' [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:15:21+08:00 ] 127.0.0.1 GET /dpt/1
+[ info ] register.org/dpt/1 [运行时间：0.031188s][吞吐率：32.06req/s] [内存消耗：3,315.68kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Dept',
+    2 => 'dpt',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Dept->dpt[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Dept.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/dept/dpt.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+  5 => 'dpt',
+  6 => 'hp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.003579s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000319s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000369s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000368s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000354s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000292s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000318s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000422s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000337s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000319s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000339s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `smdept` [ RunTime:0.002182s ]
+[ sql ] [ SQL ] SELECT * FROM `smdept` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT h.id as hospital_id,h.name as hospital,`h`.`pic`,`h`.`description`,s.id as dept_id,s.name as dept FROM `smdept` `s` INNER JOIN `hospital` `h` ON `s`.`hospital`=`h`.`id` WHERE  `s`.`name` = '心血管内科' [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:16:37+08:00 ] 127.0.0.1 GET /dpt/1
+[ info ] register.org/dpt/1 [运行时间：0.033140s][吞吐率：30.18req/s] [内存消耗：3,315.67kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Dept',
+    2 => 'dpt',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Dept->dpt[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Dept.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/dept/dpt.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+  5 => 'dpt',
+  6 => 'hp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.004370s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000442s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000359s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000355s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000390s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000399s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000340s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000363s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000365s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000303s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `smdept` [ RunTime:0.002480s ]
+[ sql ] [ SQL ] SELECT * FROM `smdept` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT h.id as hospital_id,h.name as hospital,`h`.`pic`,`h`.`description`,s.id as dept_id,s.name as dept FROM `smdept` `s` INNER JOIN `hospital` `h` ON `s`.`hospital`=`h`.`id` WHERE  `s`.`name` = '心血管内科' [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:23:33+08:00 ] 127.0.0.1 GET /
+[ info ] register.org/ [运行时间：0.027825s][吞吐率：35.94req/s] [内存消耗：3,262.65kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/dpt/1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/index/index.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000665s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.002704s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000439s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000381s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000336s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000416s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000393s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000391s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000381s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000386s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000351s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:23:54+08:00 ] 127.0.0.1 GET /
+[ info ] register.org/ [运行时间：0.034946s][吞吐率：28.62req/s] [内存消耗：3,262.78kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/index/index.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000867s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.003953s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000355s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000437s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000395s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000322s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000388s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000399s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000369s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000338s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000343s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000316s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:23:58+08:00 ] 127.0.0.1 GET /reg
+[ info ] register.org/reg [运行时间：0.016295s][吞吐率：61.37req/s] [内存消耗：2,440.26kb] [文件加载：45]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Login',
+    2 => 'reg',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\user\controller\Login->reg[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Login.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/login/reg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T19:24:05+08:00 ] 127.0.0.1 POST /login
+[ info ] register.org/login [运行时间：0.027981s][吞吐率：35.74req/s] [内存消耗：3,711.16kb] [文件加载：54]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://register.org',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://register.org/reg',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '18811080656',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\user\controller\Login->login[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005156s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone` = '18811080656'  AND `password` = '812e0e556888c85ea9f6125953395c2d' LIMIT 1 [ RunTime:0.000410s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:24:09+08:00 ] 127.0.0.1 POST /login
+[ info ] register.org/login [运行时间：0.025739s][吞吐率：38.85req/s] [内存消耗：3,706.69kb] [文件加载：53]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://register.org',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://register.org/reg',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '18811080655',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\user\controller\Login->login[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002440s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `phone` = '18811080655'  AND `password` = '812e0e556888c85ea9f6125953395c2d' LIMIT 1 [ RunTime:0.000588s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:24:09+08:00 ] 127.0.0.1 GET /reg
+[ info ] register.org/reg [运行时间：0.014021s][吞吐率：71.32req/s] [内存消耗：2,234.66kb] [文件加载：43]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Login',
+    2 => 'reg',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/reg',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\user\controller\Login->reg[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Login.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/login/reg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T19:24:11+08:00 ] 127.0.0.1 GET /
+[ info ] register.org/ [运行时间：0.028387s][吞吐率：35.23req/s] [内存消耗：3,262.84kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/reg',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/index/index.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.003824s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000397s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000408s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000348s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000388s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000333s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000330s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000344s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000362s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000340s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:24:13+08:00 ] 127.0.0.1 GET /user
+[ info ] register.org/user [运行时间：0.037541s][吞吐率：26.64req/s] [内存消耗：3,548.16kb] [文件加载：54]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'User',
+    2 => 'register',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\User->register[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/User.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/user/user.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+  5 => 'res',
+  6 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.004045s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000460s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000390s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000449s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000425s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000378s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000333s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000317s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000285s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000316s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reg` [ RunTime:0.002255s ]
+[ sql ] [ SQL ] SELECT r.date as date,r.time as time,h.name as hospital,b.name as bgdept,s.name as smdept,r.doctor_id as doctor_id,d.name as doctor FROM `reg` `r` INNER JOIN `doctor` `d` ON `r`.`doctor_id`=`d`.`id` INNER JOIN `smdept` `s` ON `d`.`smdept`=`s`.`id` INNER JOIN `hospital` `h` ON `s`.`hospital`=`h`.`id` INNER JOIN `bgdept` `b` ON `s`.`bgdept`=`b`.`id` WHERE  `r`.`user_id` = 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001822s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2018-04-13T19:24:29+08:00 ] 127.0.0.1 GET /
+[ info ] register.org/ [运行时间：0.029933s][吞吐率：33.41req/s] [内存消耗：3,262.83kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/guahao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'register.org',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://register.org/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cookie' => 'PHPSESSID=k6nkj6b4qlf12206fq7irng8d2; ace_skin=no-skin; ace_settings=%7B%22sidebar-collapsed%22%3A-1%7D',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\user\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/guahao/application/user/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/guahao/public/../application/user/view/index/index.html [ array (
+  0 => 'name',
+  1 => 'role',
+  2 => 'avatar',
+  3 => 'bgdept',
+  4 => 'smdept',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000588s ] mysql:host=127.0.0.1;dbname=reg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bgdept` [ RunTime:0.004444s ]
+[ sql ] [ SQL ] SELECT * FROM `bgdept` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 1 group by name [ RunTime:0.000449s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 2 group by name [ RunTime:0.000388s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 8 group by name [ RunTime:0.000356s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 9 group by name [ RunTime:0.000350s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 10 group by name [ RunTime:0.000315s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 11 group by name [ RunTime:0.000300s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 12 group by name [ RunTime:0.000323s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 13 group by name [ RunTime:0.000322s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 14 group by name [ RunTime:0.000259s ]
+[ sql ] [ SQL ] select *, count(distinct name) from smdept 
+              where bgdept = 15 group by name [ RunTime:0.000261s ]
