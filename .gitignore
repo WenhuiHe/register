@@ -1,3 +1,4 @@
 tmp
 log
-
+mysql/mysql.error.log
+mysql/mysql.slow.log
