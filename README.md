@@ -1,3 +1,3 @@
 # register
 
-Author: Wenhui He
+Author: Tingyu Yuan, Wenhui He
