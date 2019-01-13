@@ -15,7 +15,7 @@ return [
     // +----------------------------------------------------------------------
 
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
     'app_trace'              => false,
     // 应用模式状态
@@ -54,7 +54,7 @@ return [
     // +----------------------------------------------------------------------
 
     // 默认模块名
-    'default_module'         => 'index',
+    'default_module'         => 'Index',
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
@@ -83,7 +83,7 @@ return [
     // URL伪静态后缀
     'url_html_suffix'        => 'html',
     // URL普通方式参数 用于自动生成
-    'url_common_param'       => false,
+    'url_common_param'       => true,
     // URL参数方式 0 按名称成对解析 1 按顺序解析
     'url_param_type'         => 0,
     // 是否开启路由
@@ -92,8 +92,6 @@ return [
     'route_complete_match'   => false,
     // 路由配置文件（支持配置多个）
     'route_config_file'      => ['route'],
-    // 是否开启路由解析缓存
-    'route_check_cache'      => false,
     // 是否强制使用路由
     'url_route_must'         => false,
     // 域名部署
@@ -124,8 +122,6 @@ return [
     'template'               => [
         // 模板引擎类型 支持 php think 支持扩展
         'type'         => 'Think',
-        // 默认模板渲染规则 1 解析为小写+下划线 2 全部转换小写
-        'auto_rule'    => 1,
         // 模板路径
         'view_path'    => '',
         // 模板后缀
