@@ -1,0 +1,56 @@
+{extend name='common@user'/}
+
+{block name='content'}
+
+<style>
+    #left-nav ul {
+        width: 200px;
+    }
+    #left-nav li {
+        height: 35px;
+    }
+</style>
+
+<link rel="stylesheet" href="__STATIC__/assets/css/jquery-ui.css" />
+
+<div class="container">
+    <div class="row">
+        <div class="hidden-sm hidden-xs" style="margin:10px; float: left">
+            <div id="left-nav" data-width="100%">
+                <ul id="menu">
+                    {foreach name='bgdept' item='item'}
+                    <li><a href="#bgdpt{$item['id']}">{$item['name']}</a></li>
+                    {/foreach}
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"
+             style=" margin-top:10px; padding: 10px; float: left; overflow: auto">
+            {foreach name='bgdept' item='item'}
+            <h3><a name="bgdpt{$item['id']}"></a>{$item['name']}</h3>
+            <div style="display: inline-block">
+                {foreach name='smdept[$item.id]' id='vo'}
+                    <h5 style="display: inline-block; padding: 0 10px"><a href="/dpt/{$vo.id}">{$vo.name} </a></h5>
+                {/foreach}
+            </div>
+            <hr>
+            {/foreach}
+        </div>
+    </div>
+</div>
+
+
+{/block}
+
+{block name='script'}
+<script src="__STATIC__/assets/js/jquery-ui.js"></script>
+<script src="__STATIC__/assets/js/jquery.ui.touch-punch.js"></script>
+<script src="__STATIC__/assets/js/ace/ace.js"></script>
+<script src="__STATIC__/assets/js/ace/ace.ajax-content.js"></script>
+
+<script>
+    $( "#menu" ).menu();
+</script>
+
+{/block}

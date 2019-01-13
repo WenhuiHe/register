@@ -1,0 +1,76 @@
+{extend name='common@user'/}
+
+{block name='content'}
+
+<style>
+    .dpt {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .well button {
+        border-radius: 15px;
+    }
+    .well a {
+        margin-left: 30px;
+    }
+    .hospital {
+        border: 1px solid #eee;
+        box-shadow: 2px 3px 5px #efefef;
+    }
+    .hp-img {
+        height: 125px;
+    }
+
+    .hp-img img {
+        padding: 10px;
+    }
+
+    .hp-dpt {
+        padding: 0 20px 20px 30px;
+    }
+
+    .hp-dpt button{
+        border-radius: 15px;
+    }
+</style>
+
+<div class="container">
+    <div class="dpt dpt-selected">
+        <div class="well">
+            <button class="btn btn-sm btn-info no-border">已选择：{$dpt['name']}</button>
+            <a href="/">返回选择科室</a>
+        </div>
+    </div>
+
+
+    <div class="dpt-hp">
+        {foreach name='hp' item='item'}
+        <div class="hospital">
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs hp-img">
+                    <img src="/{$item['pic']}" alt="" width="100%">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                    <div class="hp-intro">
+                        <h4><a href="/hp/{$item.hospital_id}">{$item.hospital}</a></h4>
+                        <p>{$item.description}</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 hp-dpt">
+                    <button class="btn btn-xs btn-info no-border"
+                            onclick="window.location.href='/smdpt/{$item.dept_id}'">{$item.dept}</button>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        {/foreach}
+    </div>
+
+</div>
+
+
+{/block}
