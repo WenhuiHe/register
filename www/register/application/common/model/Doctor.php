@@ -3,7 +3,7 @@
 namespace app\common\model;
 
 use think\Model;
-use think\session;
+use think\Session;
 use think\Db;
 
 class Doctor extends Model
